@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Quicksand&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* background: url('https://www.dropbox.com/s/b0f78uxdzncj4vi/jorge-garcia-EubZ00KdZzI-unsplash.jpg?dl=1');    */
+    background-image: url(../image/base.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    
+}
+.flex-container {
+    
+    display: flex;
+    width: 70%;
+    margin: 10px auto;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 10px 50px;
+    font-family: 'Fredoka', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+
+.post_section {
+    flex: 25%;
+    text-align: center;
+    height: 70vh;
+    max-width: 30%;
+    margin: 20px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.687);
+    border-radius: 10px;
+    padding:5px 10px;
+    overflow-y: hidden;
+    /* box-sizing: border-box; */
+    background: rgba(255, 255, 255, 0.687);
+    transition: 1s ease-in-out;
+} 
+
+.post_section:hover {
+    box-shadow: 2px 4px 20px aqua;
+    transform: scale(1.03);
+    transition-duration: 0.3s;
+}
+
+hr{
+    color: green;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.like_post{
+    color: green;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+.like_del{
+    display:flex;
+    justify-content: space-around;
+
+}
+
+#delete{
+    color: brown;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 8px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.visit {
+    text-decoration: none;
+}
+.title {
+    display: block;
+    margin: 10px auto;
+    font-size: large;
+    font-weight: 700;
+}
+.summery{
+    display: block;
+}
+
+.images > img{
+    max-width: 100%;
+    max-height: 60%;
+    border-radius: 10px;
+}
+
+@media (max-width: 850px){
+    .post_section {
+        flex: 30%;
+        max-width: 40%;
+    }
+    .flex-container {
+        width: 90%; 
+    }
+}
+
+@media (max-width: 600px){
+    .post_section {
+        flex: 40%;
+        max-width: 45%;
+    }
+    .flex-container {
+        width: 90%; 
+    }
+}
+
+@media (max-width: 500px){
+    .post_section {
+        flex: 100%;
+        max-width: 100%;
+    }
+    .flex-container {
+        width: 90%; 
+    }
+}

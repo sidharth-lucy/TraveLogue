@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+    Post Creation
+{% endblock title %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'blog/css/postcreation.css' %}">
+{% endblock style %}
+
+
+{% block content %}
+    {{ form.media }}
+    <form action="{% url 'postcreation' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <h3>Create Your New Post Here !!</h3>
+        {% for field in form %}
+            <label>{{field.label}}</label>
+            {{field}}
+            {{field.errors}} <br>
+
+        {% endfor %}
+        <input type="submit" value="Post">
+    </form>
+    
+    
+    
+
+{% endblock content %}
+    

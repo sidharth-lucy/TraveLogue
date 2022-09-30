@@ -1,0 +1,12 @@
+{% load static %}
+   
+      <a href="{% url 'detailPost' post.slug %}" class="visit">
+          <span class="images" ><img src="{{ post.image.url }}" alt="Not found"></span>
+          <span class= "title" >{{ post.title }}</span>
+          <span class='summery' >{{ post.exerpt|linebreaks }}</span>
+          
+ 
+      </a> 
+     
+      
+      

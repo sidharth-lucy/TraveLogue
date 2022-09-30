@@ -1,0 +1,55 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Roboto+Mono:ital,wght@0,200;0,300;1,100;1,200;1,300&display=swap');
+
+
+body{
+    margin: 0%;
+    font-family: 'Gideon Roman', cursive;
+    font-family: 'Roboto Mono', monospace;
+    /* background-image: url(https://www.dropbox.com/s/2jb8rdn183x32bn/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg?dl=1); */
+    /* background-image: url(https://www.dropbox.com/s/j1p8s5canwo1e0i/benaja-germann-N-GC1dMXwvA-unsplash%20%281%29.jpg?dl=1); */
+    /* background-image: url(https://www.dropbox.com/s/8cr5rgk91n3q530/j-balla-photography-6wmFPgnd__Q-unsplash.jpg?dl=1); */
+    /* background-image: url(https://www.dropbox.com/s/8g2y9njai5akn8s/jack-bassingthwaighte-4BjRH993RtE-unsplash.jpg?dl=1); */
+    /* background-image: url(https://www.dropbox.com/s/nt3vfuifzad7lzu/ali-raoufian-F5Cq8XeXTkQ-unsplash.jpg?dl=1) */
+    /* background-image: url(https://www.dropbox.com/s/6u508qdv84ej42x/keith-luke-sPU2kzPIf28-unsplash.jpg?dl=1); */
+    /* background-image: url(https://www.dropbox.com/s/b0f78uxdzncj4vi/jorge-garcia-EubZ00KdZzI-unsplash.jpg?dl=1); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+ 
+
+    
+}
+
+
+ nav{
+    background-color: rgb(71, 71, 71);
+    width: 100%;
+    height: 7vh;
+    padding-top: 2%;
+    /* background-image: url(https://images.unsplash.com/photo-1530804458434-67fe207c3a71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80); */
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    text-align: right;
+    font-size: large;
+    font-weight: bold;
+    margin: 10px;
+}
+
+
+
+.success {
+    display: inline;
+    padding: 5px;
+    border-radius:0 10px 10px 0 ;
+    color: rgba(0, 0, 0, 0.802);
+    text-shadow: rgb(255, 255, 255) 0 0 20px;
+}
+
+
+

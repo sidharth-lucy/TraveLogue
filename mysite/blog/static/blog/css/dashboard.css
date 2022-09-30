@@ -1,0 +1,62 @@
+/* /Author details styling done here/  */
+.flex-container {
+    display: flex;
+    flex: row wrap;
+    align-items: center;
+    margin: 20px 5px;
+}
+
+.author_img {
+    margin-right: 10px;
+} 
+ 
+.author_img > img {
+    width: 90px;
+    height: 90px;
+    border-radius:100% ;
+    transition: all 0.4s;
+}
+
+.author_details > address{
+    margin-bottom: 5px;
+}
+
+.author_details > address > a{
+    text-decoration: none;
+    font-style:normal ;
+    font-weight: 600;
+    font-size: large;
+ 
+}
+
+.author_details > a {
+    text-decoration: none;
+    font-size: 15px;
+    display: inline-block;
+    margin-right: 10px;
+    border: 1px solid #2bbe60;
+    border-radius: 4px;
+    padding: 1px 5px;
+    background-color: #2bbe60;
+    color: aliceblue;
+    transition: all 0.4s;
+}
+
+.author_details > a:hover {
+    background-color: aliceblue;
+    color: #2bbe60;
+}
+
+@media (max-width: 374px){
+    .author_img > img {
+        width: 110px;
+        height: 110px;
+    }
+}
+ 
+@media (max-width: 270px){
+    .author_img > img {
+        width: 130px;
+        height: 130px;
+    }
+}

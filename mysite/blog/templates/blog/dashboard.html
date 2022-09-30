@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+    MyDashboard
+{% endblock title %}
+
+{% block style %}
+     <link rel="stylesheet" href="{% static 'blog/css/post.css' %}">
+     <link rel="stylesheet" href="{% static 'blog/css/dashboard.css' %}">
+     
+{% endblock style %}
+
+
+{% block content %}
+
+    <div class="flex-container author">
+           
+            <!-- <form class="author_img" action="" method="post">
+                <img src="{{ uname.userimg.uimage.url }}" alt="Not fond">
+            </form> -->
+            {% if  uname.userimg.uimage.url is not None %}
+                <a class='author_img' href="{% url 'userImageUpdate' %}"><img src="{{ uname.userimg.uimage.url }}"></a>
+            {% else %}
+                <a class='author_img' href="{% url 'userImageUpdate' %}"><img src="{% static 'blog/image/mine.png' %}" alt="Not fond"></a>
+            {% endif %}
+
+            
+            <div class="author_details">
+                {% comment %} <address><a href="mailto:{{uname.email}}">@{{uname.username}}</a></address> {% endcomment %}
+                <address><a href="{% url 'portfolio' uname.id %}">@{{uname.username}}</a></address>
+                
+
+                {% if request.user.is_authenticated %}
+                <a href="{% url 'userupdate' %}">Update Profile </a>
+                {% endif %}
+                {% if request.user.is_authenticated %}
+                <a href="{% url 'userpasswordchange' %}">Update Password </a>
+                {% endif %}
+
+                {% if request.user.is_authenticated %}
+                <a href="{% url 'postcreation' %}">Create Post </a>
+                {% endif %}
+
+            </div>
+
+            
+    </div>
+  
+
+    <div class="flex-container posts">
+
+        {% for post in post %}
+
+            <div class="post_section">
+                {% include 'blog/include/include_post.html' %}
+                
+                <hr>
+                <div class="like_del">
+                    
+                    {% if perms.blog.delete_post %}
+                    
+                    <form action="{% url 'postdelete' post.slug %}" method="post">
+                        {% csrf_token %}
+                        <button id="delete">Delete</button>
+                    </form>
+                        <a post_id={{post.id}} class='like_post'>Likes:<p id='{{post.id}}'>{{post.like}}</p></a>
+                    {% endif %}
+                
+                
+                        {% comment %} <a href="/like-post?post_id={{post.id}}">Like</a>: {{post.like}} {% endcomment %}
+
+                </div>
+                
+            </div>
+            
+            
+        {% endfor %}
+        
+        
+    </div>
+
+
+
+
+
+{% endblock content %}
+
+

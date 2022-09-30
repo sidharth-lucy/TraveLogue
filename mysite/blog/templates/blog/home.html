@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+    Home 
+{% endblock title %}
+
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'blog/css/post.css' %}">
+{% endblock style %}
+
+
+ 
+{% block content %}
+   
+    {% if have_post %}
+        <div class="flex-container posts">
+
+            {% for post in post %}
+                <div class="post_section">
+                    {% include 'blog/include/include_post.html' %}
+                    <hr>
+                    <div>
+                        
+                        <a post_id={{post.id}} class='like_post'>Like</a> : <p id='{{post.id}}'>{{post.like}}</p>
+                        {% comment %} <a href="/like-post?post_id={{post.id}}" class='like_post'>Like</a> : {{post.like}}  {% endcomment %}
+                        {% comment %} {% include 'blog/include/include_like.html' %} {% endcomment %}
+                        <!-- <a href="/like-post?post_id={{post.id}}">Like</a> : {{post.like}} -->
+                    </div>
+                    
+                </div>
+                
+            {% endfor %}
+        </div>
+    {% else %}
+        <h2> No any Post Yet !!</h2>
+    {% endif %}
+    
+    
+
+{% endblock content %}
+    

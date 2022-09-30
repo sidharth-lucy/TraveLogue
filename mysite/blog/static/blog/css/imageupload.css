@@ -1,0 +1,70 @@
+*{
+    font-family: 'Fredoka', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* background: rgb(53, 54, 58); */
+    /* background: url('https://www.dropbox.com/s/je3fwbtf93gbwxe/bg4.jpg?dl=1'); */
+    background: url('https://www.dropbox.com/s/ff8z2ydccgimso6/jason-leung-Xaanw0s0pMk-unsplash.jpg?dl=1');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+form {
+    width: 80%;
+    margin: 80px auto;
+    padding: 20px 10px;
+    border: 1px solid #c2c7d047;
+    border-radius: 4px;
+    background-color: rgba(194, 199, 208, 0.278);
+    box-shadow: 2px 4px 20px #c2c7d047;
+}
+
+form > h3 {
+    text-align: center;
+    margin: 0px auto 20px;
+    color: rgba(131, 255, 60, 0.755);
+}
+
+form > label {
+    display: inline-block;
+    margin-bottom: 3px;
+    /* color: floralwhite; */
+    color: black;
+    font-weight: bold;
+}
+
+form > input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+form > input[type=submit]{
+    color: aliceblue;
+    background-color: #0f9d58;
+    background-image: linear-gradient(to bottom, #2bbe60, #0f9d58);
+    border: 1px solid #0f9d58;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 8%), inset 0 -1px 4px rgb(151 159 175 / 20%);
+    font-weight: 800;
+    cursor: pointer;
+}
+
+form > textarea{
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: none;
+    background: rgb(238, 238, 238);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}

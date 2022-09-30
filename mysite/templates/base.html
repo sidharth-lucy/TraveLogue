@@ -1,0 +1,70 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    {% block style %}{% endblock style %}
+</head>
+<body>
+    
+    
+    
+    <div class="navbar">
+        
+        <nav>
+            <a href="{% url 'home' %}">Home</a>
+            {% if request.user.is_authenticated %}
+                <a href="{% url 'dashboard' %}">Dashboard</a>
+                <a href="{% url 'allfavourite' %}">Favourite Post</a>
+                <a href="{% url 'logout' %}">Logout</a>
+            {% else %}
+                <a href="{% url 'signup' %}">Sign Up </a>
+                <a href="{% url 'login' %}">Log In</a>
+            {% endif %}
+        </nav>
+    
+    </div>
+    <br>
+
+    <div class="message">
+        {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>
+                    {{ message }}
+                </li>
+                {% endfor %}
+            </ul>      
+        {% endif %}
+    </div>
+
+
+    {% block content %}
+    
+    
+    {% endblock content %}
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="{% static 'blog/js/custom_js.js' %}"> </script>
+    <script>
+        var messages = document.querySelector('.messages');
+
+        setTimeout(fading, 2000);
+
+        function fading() {  
+            messages.style.opacity = 0.5;
+            setTimeout(fade_out, 2000);
+        }
+
+        function fade_out(){
+            messages.style.display = "none";
+        }
+    </script>
+    
+</body>
+</html>

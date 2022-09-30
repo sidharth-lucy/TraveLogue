@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+    User Update
+{% endblock title %}
+
+{% block style %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Quicksand&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'blog/css/login.css' %}">
+
+{% endblock style %}
+
+{% block content %}
+    
+    
+
+    <form action="{% url 'userupdate' %}" method="post">
+        {% csrf_token %}
+        {% for field in form %}
+            <label>{{field.label}}</label>
+            {{field}}
+            {{field.errors}} <br>
+
+        {% endfor %}
+        <input type="submit" value="Save">
+    </form>
+    
+    
+    
+
+{% endblock content %}
+    

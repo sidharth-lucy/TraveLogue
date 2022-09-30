@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+    About Me
+{% endblock title %}
+
+{% block style %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Quicksand&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'blog/css/imageupload.css' %}">
+
+{% endblock style %}
+
+
+{% block content %}
+    
+    
+
+    <form action="{% url 'userImageUpdate' %}" method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <h3>Update Your Profile !</h3>
+        {% for field in form %}
+            <label>{{field.label}}</label><br>
+            {{field}}
+            {{field.errors}} <br>
+
+        {% endfor %}
+        <input type="submit" value="Save">
+    </form>
+    
+    
+    
+
+{% endblock content %}
+    

@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Montserrat:wght@200&family=Quicksand&display=swap');
+
+*{
+    font-family: 'Fredoka', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.detail{
+    width: 80%;
+    margin: 50px auto;
+}
+
+.flex-container {
+    display: flex;
+    /* align-items: center; */
+    flex: row wrap;
+    justify-content: space-around;
+}
+
+.detail_add {
+    border: 0.3px #000 solid;
+    padding: 10px 30px;
+    border-radius: 0 20px 0 20px;
+    /* background: #3451A2; */
+}
+
+
+.author_name {
+    font-style: normal;
+    color: rgb(134, 134, 134);
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.date {
+    font-size: x-small;
+    font-variant: small-caps;
+    margin-top: 3px;
+}
+
+.tags {
+    margin: 3px 0px;
+}
+
+.tags > span {
+    display: inline-block;
+    padding: 0.2px 5px;
+    background: rgb(100, 212, 247);
+    color: rgb(255, 255, 255);
+    margin-right: 3px;
+    /* font-size: x-small; */
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+.addToFav {
+    border: none;
+    padding: 2px 5px;
+    background: aquamarine;
+    color: #003;
+    cursor: pointer;
+    /* font-size: x-small; */
+    font-weight: 600;
+    margin: 8px 0px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 0 5px 0 5px;
+}
+
+.addToFav:hover {
+    color: aquamarine;
+    background-color: rgb(11, 11, 167);
+}
+
+.left-part, .right-part {
+    flex: 50%;
+}
+
+.right-part {
+    text-align: right;
+}
+
+.right-part > img {
+    width: 100%;
+    /* max-height: 100%; */
+    border-radius: 0 20px 0 20px;
+}
+
+.left-part > h2 {
+    margin-top: 0;
+}
+
+.content {
+    margin-top: 40px;
+    padding: 0 30px 30px 30px;
+    border-left: 0.3px solid grey;
+    border-right: 0.3px solid grey;
+    text-align: justify;
+}
+
+.written_comments {
+    padding: 30px;
+}
+
+.written_comments > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.written_comments > ul > li {
+    margin-bottom: 10px;
+    border-bottom:1px solid #ccc ;
+}
+
+.commenter {
+    font-size: large;
+    font-weight: 600;
+}
+
+.comment-box {
+    padding: 30px;
+}
+
+.comment-box > form > fieldset {
+    padding-top: 20px;
+    border-radius: 5px;
+}
+
+.comment-box > form > fieldset > textarea {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: none;
+    background: rgb(238, 238, 238);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.cmt-btn {
+    width: 100%;
+    margin: auto;
+    padding: 10px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    color: azure;
+    font-weight: 600;
+}
+
+.footer {
+    margin-top: 100px;
+    padding: 100px;
+    text-align: center;
+    font-size: 100px;
+    font-weight: 800;
+    background: #000;
+    color: aliceblue;
+    border-radius: 5px;
+}

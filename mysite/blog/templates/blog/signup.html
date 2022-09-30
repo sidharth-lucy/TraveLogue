@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+    Signup Page 
+{% endblock title %}
+
+
+{% block style %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Quicksand&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'blog/css/login.css' %}">
+
+{% endblock style %}
+
+
+{% block content %}
+    <form style="width: 500px; color: floralwhite;" action="{% url 'signup' %}" method="post">
+        {% csrf_token %}
+        <h3>SignUp Here</h3>
+        {% if uname %} <p id="error">{{uname}}</p><br>{% endif %}
+        {% for field in form %}
+            {{ field.label }}
+            {{ field }}  <br>
+        {% endfor %}
+
+        <input type="submit" name="signup" id="signup" value="SignUp">
+    </form>
+    
+    
+
+{% endblock content %}
+    

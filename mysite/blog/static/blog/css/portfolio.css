@@ -1,0 +1,192 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(28, 28, 62);
+}
+
+
+h2 {
+	font-family: "Poppins";
+	font-size: 36px;
+    color:rgb(7, 237, 237);
+	margin-bottom: 15px;
+}
+
+h3 {
+	font-size: 24px;
+	font-weight: 500;
+    color:azure;
+	margin-bottom: 25px;
+	margin-top: 0px;
+}
+
+h3,
+span,
+p {
+	font-family: "Avenir";
+    color:azure;
+}
+
+.profile_container {
+	margin: 60px 100px 0px;
+	max-width: 900px;
+	display: flex;
+	overflow-x: hidden;
+}
+
+
+
+.profile_img-LG {
+	height: 400px;
+	width: 300px;
+	border-radius: 40px;
+
+	object-fit: cover;
+	object-position: 50% 50%;
+
+	background-position: 40% 50%;
+}
+
+
+.info{
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.follow ,form{
+    display: flex;
+
+    
+}
+
+.follow > p,button{
+    
+    border: 1px solid rgba(225, 218, 218, 0.5);
+    border-radius: 4px;
+    margin: 10px;
+    margin-left: 0;
+    padding: 10px;
+}
+/* 
+.follow > form{
+
+} */
+
+.together{
+    max-width: 100%;
+    max-height: 60vh;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+
+}
+
+#work {
+    color: #e6e6e6;
+}
+
+.media{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-bottom: 20px;
+}
+
+.media >a{
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 12px;
+}
+
+.media>a:hover{
+    background-color: rgb(199, 213, 215);
+    transform: scale(1.2);
+}
+
+
+
+.description {
+	margin-bottom: 30px;
+	margin-top: 0px;
+}
+
+.profile_img_section {
+	margin-right: 50px;
+}
+
+.profile_desc_section {
+	display: flex;
+	flex-direction: column;
+
+	margin-left: 50px;
+}
+
+.interests_item {
+	display: inline-block;
+	padding: 5px 15px;
+	margin-right: 7.5px;
+	margin-bottom: 10px;
+	line-height: 35px;
+	background-color: #e6e6e6;
+	border-radius: 5px;
+
+	color: rgba(34, 34, 34, 0.5);
+}
+
+.info {
+	margin-top: -20px;
+	margin-left: 80px;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+	.profile_container{
+		margin: 60px 33px 0px;
+	}
+
+	.profile_container {
+		flex-direction: column;
+	}
+
+	.profile_img_section {
+		margin: 0 auto;
+	}
+
+	.profile_img-LG {
+		width: 300px;
+		height: 300px;
+		border-radius: 100%;
+	}
+
+
+	.profile_desc_section {
+		margin-left: 0px;
+		margin-bottom: 10px;
+		margin-top: -40px;
+	}
+
+    .media >a{
+        text-decoration: none;
+        width: 50px;
+        height: 50px;
+        border: 1px solid white;
+        border-radius: 50%;
+        margin: 5px;
+        padding: 10px;
+    }
+
+    .info {
+        margin-top: -20px;
+        margin-left: 20px;
+    }
+
+}

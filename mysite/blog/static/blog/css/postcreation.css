@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Quicksand&display=swap');
+
+*{
+    font-family: 'Fredoka', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: rgb(53, 54, 58);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+form {
+    width: 60%;
+    margin: 80px auto;
+    padding: 20px 30px;
+    /* background: rgb(0, 40, 104); */
+    /* background: linear-gradient(to right top, rgb(0, 0, 85), rgba(20, 20, 160, 0.599)); */
+    box-shadow: 2px 4px 20px #ffffff47;
+    transition: all 0.6s;
+
+    /* background: url('formbg.jpg'); */
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+form > h3 {
+    text-align: center;
+    margin: 0px auto 20px;
+    color: rgba(131, 255, 60, 0.755);
+}
+
+form > label {
+    display: inline-block;
+    margin-bottom: 5px;
+    color: floralwhite;
+}
+
+form > input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 7px 5px;
+    box-sizing: border-box;
+    border: none;
+}
+
+form > input[type=file] {
+    color: aliceblue;
+}
+
+form > label > sub > i{
+    font-size: 10px;
+    text-transform: lowercase;
+}
+
+form > input[type=submit]{
+    color: aliceblue;
+    background-color: #0f9d58;
+    background-image: linear-gradient(to bottom, #2bbe60, #0f9d58);
+    border: 1px solid #0f9d58;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 8%), inset 0 -1px 4px rgb(151 159 175 / 20%);
+    font-weight: 800;
+    cursor: pointer;
+} 
+
+form > textarea {
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    border: none;
+    box-sizing: border-box;
+}
+
+form > select {
+    display: block;
+    width: 100%;
+    padding: 3px 12px;
+    margin-bottom: 20px;
+}
+
+form > select::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+}
+
+form > select::-webkit-scrollbar:hover {
+    width: 20px;
+    height: 20px;
+}
+
+form > select::-webkit-scrollbar-track{
+    background: linear-gradient(to bottom right, red, rgb(255, 163, 163));
+}
+
+form > select::-webkit-scrollbar-thumb{
+    background: linear-gradient(to left top,rgb(0, 43, 172),rgb(81, 81, 255) );
+}
+
+form > select >option {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+@media (max-width: 800px){
+    form {
+        width: 80%;
+    }
+}
