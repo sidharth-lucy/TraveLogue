@@ -12,55 +12,55 @@
 ## Signup /login page of website:
 
 ![App Screenshot](Images_for_readme.md/login.png)
-![App Screenshot](https://www.dropbox.com/s/9on7sofnoe8zrny/signup.png?dl=1)
+![App Screenshot](Images_for_readme.md/signup.png)
 
 
 ## Home page of website:
 
-![App Screenshot](https://www.dropbox.com/s/waupjplqncn5xzd/home1.png?dl=1)
-![App Screenshot](https://www.dropbox.com/s/mqpbkqx8likk3vs/home2.png?dl=1)
+![App Screenshot](Images_for_readme.md/home1.png)
+![App Screenshot](Images_for_readme.md/home2.png)
 
 
 ## Personal Dashboard:
 
-![App Screenshot](https://www.dropbox.com/s/0l0rswv3f8ju1m0/dashboard.png?dl=1)
+![App Screenshot](Images_for_readme.md/dashboard.png)
 
 
 ## Bookmarked Blog:
 
-![App Screenshot](https://www.dropbox.com/s/kjizxj27mjs4ibm/fav_post.png?dl=1)
+![App Screenshot](Images_for_readme.md/fav_post.png)
 
 
 ## Personal Mini portfolio page:
 
-![App Screenshot](https://www.dropbox.com/s/6mt8vacps7y7e68/personal_page.png?dl=1)
-![App Screenshot](https://www.dropbox.com/s/xafafb9w6mx6jz7/port_mobile.png?dl=1)
+![App Screenshot](Images_for_readme.md/personal_page.png)
+![App Screenshot](Images_for_readme.md/port_mobile.png)
 
 
 ## Creating a Post:
 
-![App Screenshot](https://www.dropbox.com/s/9aiauuw9iihiecd/post.png?dl=1)
+![App Screenshot](Images_for_readme.md/post.png)
 
 ## Updating your Personal Info:
 
-![App Screenshot](https://www.dropbox.com/s/mcb43z8l5lm79tz/updatePersonalinfo.png?dl=1)
+![App Screenshot](Images_for_readme.md/updatePersonalinfo.png)
 
 
 ## changing Password:
 
-![App Screenshot](https://www.dropbox.com/s/kpr0jgafd8hwwx8/passwordchange.png?dl=1)
+![App Screenshot](Images_for_readme.md/passwordchange.png)
 
 ## Deatail form For Generating Personal portfolio page:
 
-![App Screenshot](https://www.dropbox.com/s/sbpmlzihj039e2r/infochange.png?dl=1)
+![App Screenshot](Images_for_readme.md/infochange.png)
 
 
 ## Post Detail view:
 
-![App Screenshot](https://www.dropbox.com/s/nt62xsn7i5bvjgj/p1.png?dl=1)
-![App Screenshot](https://www.dropbox.com/s/fg4skn9jc8205q9/p2.png?dl=1)
-![App Screenshot](https://www.dropbox.com/s/fbg4dj80l4i08qx/p3.png?dl=1)
-![App Screenshot](https://www.dropbox.com/s/rh7ls6busqovufm/p4.png?dl=1)
+![App Screenshot](Images_for_readme.md/p1.png)
+![App Screenshot](Images_for_readme.md/p2.png)
+![App Screenshot](Images_for_readme.md/p3.png)
+![App Screenshot](Images_for_readme.md/p4.png)
 
 
 Note- i have used some free images from the unsplash.com 
